@@ -44,7 +44,7 @@ Each `Practical-XX` folder contains:
 - `layout/` — XML layout files
 
 ## 👤 Author
-Student — Department of Computer Engineering, Government Polytechnic Bhuj
+ Department of Computer Engineering, Government Polytechnic Bhuj
 
 ## 📄 License
 This project is for academic/educational purposes.
