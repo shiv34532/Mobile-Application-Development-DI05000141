@@ -28,6 +28,3 @@ See [layout/activity_main.xml](./layout/activity_main.xml)
 
 ### src/MainActivity.java
 See [src/MainActivity.java](./src/MainActivity.java)
-
-## Output
-A basic app launches showing "Hello, Android World!" with a button that shows a Toast message on click.
