@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <!-- Checkbox for marking Task Completed / Pending (UPDATE) -->
+        <CheckBox
+            android:id="@+id/cbTaskStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#4338CA" />
+
+        <!-- Middle Text Info (Title + Status Badge) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/tvTaskTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Title Item"
+                android:textColor="#1E293B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="2dp" />
+
+            <!-- Dynamic Status Badge (Pending / Done) -->
+            <TextView
+                android:id="@+id/tvTaskStatusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏳ Pending"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#B45309"
+                android:background="@drawable/bg_badge_pending"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Edit Button (UPDATE) -->
+        <TextView
+            android:id="@+id/btnEditTask"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="✏️ Edit"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#B45309"
+            android:background="@drawable/bg_badge_pending"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="6dp" />
+
+        <!-- Delete Button (DELETE) -->
+        <TextView
+            android:id="@+id/btnDeleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="🗑️ Del"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#DC2626"
+            android:background="@drawable/bg_badge_pending"
+            android:backgroundTint="#FEE2E2"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
